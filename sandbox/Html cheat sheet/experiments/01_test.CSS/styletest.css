@@ -1,0 +1,356 @@
+/* reset */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* core styling */
+html, body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+  line-height: 1.7em;
+}
+h1, h2, h3{
+  padding-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+p{
+margin: 10px 0;
+}
+
+/* Utility */
+.container{
+  max-width: 1100px;
+  margin:auto;
+ padding: 0 20px;
+  overflow: auto;
+}
+
+.text-primary{
+  color: #f7c08a;
+}
+
+.btn{
+  color: #fff;
+  background: #333;
+  padding: 15px 20px;
+  
+}
+.btn:hover {
+  color: #333;
+  background: #f7c08a;
+  
+}
+
+.btn-light{
+  color: #333;
+  background: #fff;
+  padding: 15px 20px;
+}
+
+.bg-dark{
+  background: #333;
+}
+
+.bg-light{
+  background:#fff;
+}
+
+.bg-primary{
+  background: #f7c08a;
+}
+
+footer{
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.py-1{
+  padding: 30px 0;
+}
+.py-2{
+  padding: 20px 0;
+}
+.py-3{
+  padding: 10px 0;
+}
+
+.l-heading {
+  font-size: 40px;
+}
+
+/* .clr{
+  clear: both;
+} */
+
+
+
+
+
+/* navbar */
+#navbar{
+
+  background: #333;
+  overflow: auto;
+  color: #fff;
+ 
+
+}
+
+#navbar ul{
+  float: right;
+  list-style: none;
+
+}
+
+#navbar a{
+  color: #fff;
+  line-height: 1em;
+} 
+
+#navbar h1{
+  float: left;
+  padding-top: 20px;
+  text-decoration: none;
+}
+  
+      
+#navbar li a{
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 25px 20px;
+}
+  
+
+
+#navbar li{
+  float: left;
+}
+
+
+#navbar ul li .current{
+  background-color: #444;
+  color:#f7c08a;
+}
+
+
+#navbar li a:hover{ 
+ background-color: #555; 
+}
+
+
+/* showcase */
+
+ #showcase{
+  background:url('../img/showcase.jpg');
+  background-position:center;
+  height: 600px;
+  background: cover;
+  background-size: cover;
+ 
+ }
+
+#showcase{
+  color:#fff;
+  text-align: center;
+
+ 
+}
+
+#showcase .container{
+  height: 500px;
+  box-sizing: border-box;
+}
+.showcase-content{
+  margin-top: 200px;
+ 
+  
+}
+
+.showcase-content h1{
+  font-size: 60px;
+  padding-bottom: 30px
+}
+
+.showcase-content p{
+ padding-bottom:30px ;
+ 
+} 
+
+#showcase .btn{
+  font-size: 18px;
+}
+
+/* home info */
+
+#home-info{
+height: 400px;
+}
+
+#home-info .info-img{
+  background-image: url('../img/photo-1.jpg'); 
+  float:left;
+  width: 50%;
+  min-height: 100%;
+}
+
+.info-content{
+  float: right;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.info-content p{
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#home-info a .btn-light{
+margin-top: 5px;
+}
+
+/* #features{
+  border: solid 3px;
+} */
+
+.box{
+  float: left;
+  width: 33%;
+  padding: 50px;
+  text-align: center;
+  height: 300px;
+}
+
+.box i{
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+#features h2{
+  color: #333;
+}
+
+/* About info */
+.box{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+ 
+
+}
+
+.info-left{
+  float: left;
+  width: 50%;
+min-height: 100%;
+}
+
+.info-right{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+.info-right img{
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info{
+  padding: 30px 0;
+}
+.info-left .text-primary {
+  font-size: 40px;
+}
+
+/* testimonial */
+.testimonials {
+  background-image: url('../img/test-bg.jpg');
+  background-position: no-repeat center center/cover;
+  height: 600px;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding-top: 100px;
+  box-sizing: border-box
+  
+}
+
+.testimonial{
+  height: 150px;
+  border: 3px #f7c08a solid;
+  background-color: #f7c08a;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  
+}
+
+.testimonial img{
+  width: 10%;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+
+  
+}
+
+.testimonial p{
+  
+}
+
+/* Forms */
+
+#form{
+  
+  padding-top:20px;
+}
+#form .container{
+  max-width: 1100px;
+  margin:auto;
+  padding: 10px 20px;
+  overflow: auto;
+}
+.m-heading{
+  font-size: 30px;
+}
+
+input{
+  width: 100%;
+  padding:10px 10px;
+  border: 1px #ddd solid;
+}
+
+textarea{
+ margin-top: 10px;
+ padding-top: 10px;
+}
+
+
+#form label{
+display: block;
+}
+
+
+.btn{
+  padding-top: 20px;
+  margin-top:20px ;
+}
