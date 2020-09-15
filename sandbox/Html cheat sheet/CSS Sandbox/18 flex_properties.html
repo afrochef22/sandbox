@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Properties</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flex-container{
+            display: flex;
+        }
+         
+
+        .item{
+            border: solid 2px #333;
+            background: #f4f4f4;
+            border-radius: 5px;
+            padding:10px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 0 200px ;
+            /* The flex property can hold 3 values in this order
+            grow= the 1  shrink= the 0  basis= the 200px */
+            
+        }
+
+        .item-3{
+            flex: 3;
+            /* Even after setting all the targets the same you can overide specific targets if you want */
+        }
+
+        /* .item-1{
+            flex-shrink: 0;
+            /* This will make the target not shrink when you make the screen smaller */
+        /* } */
+        /* .item-2{ */
+            /* flex-grow: 1; */
+             /*This will make the target grown as the screen gets bigger  */
+             /* flex-basis: 0; */
+             /* This is like setting the width of the target. Now item 3 will be exatly twice the size of item 2 */
+        /* } */
+        /* .item-3{ */
+            /* flex-grow: 2; */
+            /* This will make the target grow twice as big compared to making it 1 */
+            /* flex-basis: 0; */
+        /* }  */
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>Item 1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>Item 2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>Item 3</h3>
+        </div>
+    </div>
+</body>
+</html>
