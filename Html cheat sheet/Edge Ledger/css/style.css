@@ -73,3 +73,52 @@ img{
 .navbar .logo {
     font-weight: 400;
 }
+
+/* Header */
+
+.hero {
+    background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    /* since the parent height is set to 100vh you need to set the height to 100% to bring it down the the middle */
+    padding: 0 20px;
+
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+/* using the psuedo property before or after alows you to put conetent before or after the element */
+.hero::before{
+    content:'';
+    position:absolute;
+    /* to creat an overlay you have to put the position at absolute. Thats why in the .hero styling the position is set to relative because in positioning if you have somthing absolute the parent element must be relative */
+    top: 0;
+    left: 0;
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,0.6)
+}
+
+.hero *{
+    z-index: 10;
+}
+ 
+
+
+
