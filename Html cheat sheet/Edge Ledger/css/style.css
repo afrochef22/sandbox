@@ -54,6 +54,11 @@ img{
     /* keeps the nav bar at the top */
     top:0px;
     padding: 0 30px;
+    transition: 0.5s;
+}
+
+.navbar.top{
+    background: transparent;
 }
 
 .navbar a {
