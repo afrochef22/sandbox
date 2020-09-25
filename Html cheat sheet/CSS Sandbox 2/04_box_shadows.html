@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        .container-1{
+            display: flex;
+        }
+        .container-2{
+            display: flex;
+        }
+        .container-3{
+            display: flex;
+            
+        }
+        .container-4{
+            display: flex;
+            
+        }
+        .container-5{
+            display: flex;
+            
+        }
+        .container-6{
+            display: flex;
+            
+        }
+
+        .box-1 {
+            padding: 1rem;
+            margin: 1rem;
+            background:coral;
+            color: white;
+            /* offset-x | offset-y | color */
+            box-shadow: 10px 10px teal;
+        }
+        
+        
+            .box-2 {
+            padding: 1rem;
+            margin: 1rem;
+            background:coral;
+            color: white;
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 10px 20px teal;
+            }
+       
+            .box-3 {
+            padding: 1rem;
+            margin: 1rem;
+            background:coral;
+            color: white;
+           
+            /* Negative values */
+            box-shadow: -5px -5px 10px teal;
+
+            
+        }
+            .box-4 {
+            padding: 1rem;
+            margin: 1rem;
+            background:coral;
+            color: white;
+           
+            /* offset-x | offset-y | blur-radius | spread-radius*/
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,.3);
+
+            
+        }
+            .box-5 {
+            padding: 1rem;
+            margin: 1rem;
+            background:coral;
+            color: white;
+           
+            /* inset offset-x | offset-y | color */
+            box-shadow: inset -3px -3px teal;
+
+            
+        }
+            .box-6 {
+            padding: 1rem;
+            margin: 1rem;
+            background:coral;
+            color: white;
+           
+            /* multiple shadows */
+            box-shadow: 3px 3px 10px teal, -3px -3px  olive;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+        <div class="container-1">
+            <div class="box-1">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-1">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-1">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            
+        </section>
+   <section>
+
+       <div class="container-2">
+           <div class="box-2">
+               <h3>Heading</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-2">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-2">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+        </section>
+            
+    <section>
+
+        <div class="container-3">
+            <div class="box-3">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-3">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-3">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container-4">
+            <div class="box-4">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-4">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-4">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container-5">
+            <div class="box-5">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-5">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-5">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container-6">
+            <div class="box-6">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-6">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+            <div class="box-6">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, veniam!</p>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
