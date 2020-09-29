@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes</title>
+    <style>
+        body {
+            background: #333;
+        }
+        .box {
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* this alows you to use peramiters like top, bottom, left, right */
+           
+            /* animation-name: animate1; */
+            
+            /* animation-duration: 5s; */
+           
+            /* animation-iteration-count: 1; */
+            /* this alows you to set how many times you want it to move. set to infinite and it won't stop */
+            
+            /* animation-fill-mode: forwards; */
+            /* this will stop the animation at the end istead of going back to the start */
+            
+            /* animation-delay: s; */
+            /* This will have the animation start after the dely time you set */
+            
+            /* animation-direction: alternate-reverse; */
+            /* 
+            
+            animation-timing-function: ease-in; */
+            /* this will have it start slow then speed up. You can also have it start fast then slow down by using ease-out or start slow go fast then back to slow ease-in-out*/
+
+            /* you can do all this with just one line */
+            animation: animate1  5s forwards  1s ease-in-out  ;
+            /* name, duration, fill-mode, dely, timing */
+        }
+
+        @keyframes animate1 {
+            /* from {
+                width: 200px;
+
+            } */ 
+            /* you don't need the from since it is already at 200px width */
+
+            from{
+                top:0;
+            }
+
+            to {
+                width: 600px;
+                background-color: red;;
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
